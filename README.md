@@ -81,7 +81,8 @@ R.drawable.my_custom_shape,20,"#FFFFFF",R.drawable.ic_person, 200, 200);
 
 <p float="left">
   <img src="https://github.com/vedraj360/DesignerToast/blob/master/Screenshots/info.png" width="200" hspace="40" />
-  <img src="https://github.com/vedraj360/DesignerToast/blob/master/Screenshots/warning.png" width="200" hspace="40" /> 
+  <img src="https://github.com/vedraj360/DesignerToast/blob/master/Screenshots/warning.png" width="200" hspace="40" />
+ <img src="https://github.com/vedraj360/DesignerToast/blob/master/Screenshots/custom.png" width="200" hspace="40" />  
 </p>
 
 
