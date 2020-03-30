@@ -1,4 +1,4 @@
-# DesignerToast
+# DesignerToast 🤩❤️🔥 
 [![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-DesignerToast-green.svg?style=flat )]( https://android-arsenal.com/details/1/8090 )
 [![platform](https://img.shields.io/badge/platform-Android-green.svg)](https://www.android.com)
 [![API](https://img.shields.io/badge/API-17%2B-brightgreen.svg?style=plastic)](https://android-arsenal.com/api?level=17)
@@ -59,7 +59,7 @@ To display an info Toast:
 DesignerToast.Info("yourContext", "Info Toast", Gravity.CENTER, Toast.LENGTH_SHORT);
 ```
 
-## Custom Toast
+## Custom Toast 🔥❤️🔥 
 To display the custom Toast:
 
 Prameters Required -> Context, Message, Gravity, Toast Length, Custom Background, Text Size, Text Color,
@@ -72,7 +72,7 @@ R.drawable.my_custom_shape,20,"#FFFFFF",R.drawable.ic_person, 200, 200);
 ```
 
 
-## Screenshots
+## Screenshots 🔥❤️🔥 
 
 **Please click the image below to enlarge.**
 
@@ -124,7 +124,7 @@ DesignerToast.Success("yourContext", "Info",, "Hello this is demo info!",Gravity
 
 ## Dark Theme Screenshots
 
-<p float="center"> <img src="https://github.com/vedraj360/DesignerToast/blob/master/Screenshots/sample_dark_toast.png" width="200" hspace="40"/>
+<p float="center"> <img src="https://github.com/vedraj360/DesignerToast/blob/master/Screenshots/sample_dark_toast.png" hspace="40"/>
 
 ## Contributing
 
