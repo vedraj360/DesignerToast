@@ -124,7 +124,7 @@ DesignerToast.Success("yourContext", "Info",, "Hello this is demo info!",Gravity
 
 ## Dark Theme Screenshots
 
-<p float="center"> <img src="https://github.com/vedraj360/DesignerToast/blob/master/Screenshots/sample_dark_toast.png" hspace="40"/>
+<p float="center"> <img src="https://github.com/vedraj360/DesignerToast/blob/master/Screenshots/sample_dark_toast.png" width="500" hspace="40"/>
 
 ## Contributing
 
