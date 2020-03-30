@@ -1,4 +1,5 @@
 # DesignerToast
+[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-DesignerToast-green.svg?style=flat )]( https://android-arsenal.com/details/1/8090 )
 [![platform](https://img.shields.io/badge/platform-Android-green.svg)](https://www.android.com)
 [![API](https://img.shields.io/badge/API-17%2B-brightgreen.svg?style=plastic)](https://android-arsenal.com/api?level=17)
 [![](https://jitpack.io/v/vedraj360/DesignerToast.svg)](https://jitpack.io/#vedraj360/DesignerToast)
@@ -69,6 +70,8 @@ DesignerToast.Custom(this,"Custom Toast",Gravity.CENTER,Toast.LENGTH_SHORT,
 R.drawable.my_custom_shape,20,"#FFFFFF",R.drawable.ic_person, 200, 200);
 
 ```
+
+
 ## Screenshots
 
 **Please click the image below to enlarge.**
@@ -86,6 +89,42 @@ R.drawable.my_custom_shape,20,"#FFFFFF",R.drawable.ic_person, 200, 200);
 </p>
 
 
+## Dark Theme Toast
+
+Just write DesignerToast.STYLE_DARK in parameter
+
+
+## Usage
+
+To display a success Toast:
+
+``` java
+DesignerToast.Success("yourContext", "Success",, "Hello this is demo success!",Gravity.CENTER, Toast.LENGTH_SHORT,DesignerToast.STYLE_DARK);
+```
+To display the error Toast:
+
+``` java
+DesignerToast.Success("yourContext", "Error",, "Hello this is demo error!",Gravity.CENTER, Toast.LENGTH_SHORT,DesignerToast.STYLE_DARK);
+```
+
+To display a warning Toast:
+
+``` java
+DesignerToast.Success("yourContext", "Warning",, "Hello this is demo warning!",Gravity.CENTER, Toast.LENGTH_SHORT,DesignerToast.STYLE_DARK);
+```
+
+To display an info Toast:
+
+``` java
+DesignerToast.Success("yourContext", "Info",, "Hello this is demo info!",Gravity.CENTER, Toast.LENGTH_SHORT,DesignerToast.STYLE_DARK);
+```
+
+
+
+
+## Dark Theme Screenshots
+
+<p float="center"> <img src="https://github.com/vedraj360/DesignerToast/blob/master/Screenshots/sample_dark_toast.png" width="200" hspace="40"/>
 
 ## Contributing
 
