@@ -23,7 +23,7 @@ Add this to your module's `build.gradle` file (make sure the version matches the
 
 ```gradle
 dependencies {
-	        implementation 'com.github.vedraj360:DesignerToast:0.1.1'
+	        implementation 'com.github.vedraj360:DesignerToast:0.1.2'
 }
 ```
 
