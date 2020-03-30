@@ -17,6 +17,8 @@ import static android.content.ContentValues.TAG;
 
 public class DesignerToast {
 
+    public static String STYLE_DARK = "STYLE_DARK";
+
     public static void defaultToast(Context context, String message, int gravity, int duration) {
         try {
             @SuppressLint("InflateParams") View layout = LayoutInflater.from(context).inflate(R.layout.designer_layout, null, false);
@@ -41,12 +43,13 @@ public class DesignerToast {
     public static void Success(Context context, String message, int gravity, int duration) {
         try {
             @SuppressLint("InflateParams") View layout = LayoutInflater.from(context).inflate(R.layout.designer_layout, null, false);
+
             LinearLayout background = layout.findViewById(R.id.toast_background_type);
             TextView toast_message = layout.findViewById(R.id.toast_message);
             ImageView toast_icon = layout.findViewById(R.id.toast_icon);
             background.setBackground(context.getResources().getDrawable(R.drawable.success_background));
             toast_message.setText(message);
-            toast_icon.setBackground(context.getResources().getDrawable(R.drawable.ic_success));
+            toast_icon.setBackground(context.getResources().getDrawable(R.drawable.ic_warning_2));
             Toast toast = new Toast(context);
             toast.setDuration(duration);
             toast.setGravity(gravity, 0, 20);
@@ -55,6 +58,27 @@ public class DesignerToast {
         } catch (Exception e) {
             Log.e(TAG, "Success: ", e);
             Error(context, String.valueOf(e), Gravity.BOTTOM, Toast.LENGTH_SHORT);
+        }
+
+    }
+
+    public static void Success(Context context, String message, String description, int gravity, int duration, String type) {
+        try {
+            @SuppressLint("InflateParams") View layout = LayoutInflater.from(context).inflate(R.layout.dark_layout, null, false);
+            TextView toast_message = layout.findViewById(R.id.dark_toast_message);
+            TextView toast_description = layout.findViewById(R.id.dark_toast_description);
+            ImageView toast_icon = layout.findViewById(R.id.dark_toast_icon);
+            toast_message.setTextColor(context.getResources().getColor(R.color.success_color));
+            toast_message.setText(message);
+            toast_description.setText(description);
+            toast_icon.setImageResource(R.drawable.ic_success_2);
+            Toast toast = new Toast(context);
+            toast.setDuration(duration);
+            toast.setGravity(gravity, 0, 20);
+            toast.setView(layout);
+            toast.show();
+        } catch (Exception e) {
+            Log.e(TAG, "Success: ", e);
         }
 
     }
@@ -78,6 +102,27 @@ public class DesignerToast {
         }
     }
 
+    public static void Error(Context context, String message, String description, int gravity, int duration, String type) {
+        try {
+            @SuppressLint("InflateParams") View layout = LayoutInflater.from(context).inflate(R.layout.dark_layout, null, false);
+            TextView toast_message = layout.findViewById(R.id.dark_toast_message);
+            TextView toast_description = layout.findViewById(R.id.dark_toast_description);
+            ImageView toast_icon = layout.findViewById(R.id.dark_toast_icon);
+            toast_message.setText(message);
+            toast_message.setTextColor(context.getResources().getColor(R.color.error_color));
+            toast_description.setText(description);
+            toast_icon.setImageResource(R.drawable.ic_error_2);
+            Toast toast = new Toast(context);
+            toast.setDuration(duration);
+            toast.setGravity(gravity, 0, 20);
+            toast.setView(layout);
+            toast.show();
+        } catch (Exception e) {
+            Log.e(TAG, "Error: ", e);
+        }
+    }
+
+
     public static void Warning(Context context, String message, int gravity, int duration) {
         try {
             @SuppressLint("InflateParams") View layout = LayoutInflater.from(context).inflate(R.layout.designer_layout, null, false);
@@ -86,7 +131,7 @@ public class DesignerToast {
             ImageView toast_icon = layout.findViewById(R.id.toast_icon);
             background.setBackground(context.getResources().getDrawable(R.drawable.warning_background));
             toast_message.setText(message);
-            toast_icon.setBackground(context.getResources().getDrawable(R.drawable.ic_warning));
+            toast_icon.setImageResource(R.drawable.ic_warning);
             Toast toast = new Toast(context);
             toast.setDuration(duration);
             toast.setGravity(gravity, 0, 20);
@@ -100,6 +145,28 @@ public class DesignerToast {
         }
     }
 
+
+    public static void Warning(Context context, String message, String description, int gravity, int duration, String type) {
+        try {
+            @SuppressLint("InflateParams") View layout = LayoutInflater.from(context).inflate(R.layout.dark_layout, null, false);
+            TextView toast_message = layout.findViewById(R.id.dark_toast_message);
+            TextView toast_description = layout.findViewById(R.id.dark_toast_description);
+            ImageView toast_icon = layout.findViewById(R.id.dark_toast_icon);
+            toast_message.setText(message);
+            toast_message.setTextColor(context.getResources().getColor(R.color.warning_color));
+            toast_description.setText(description);
+            toast_icon.setImageResource(R.drawable.ic_warning_2);
+            Toast toast = new Toast(context);
+            toast.setDuration(duration);
+            toast.setGravity(gravity, 0, 20);
+            toast.setView(layout);
+            toast.show();
+        } catch (Exception e) {
+            Log.e(TAG, "Warning: ", e);
+
+        }
+    }
+
     public static void Info(Context context, String message, int gravity, int duration) {
         try {
             @SuppressLint("InflateParams") View layout = LayoutInflater.from(context).inflate(R.layout.designer_layout, null, false);
@@ -108,7 +175,7 @@ public class DesignerToast {
             ImageView toast_icon = layout.findViewById(R.id.toast_icon);
             background.setBackground(context.getResources().getDrawable(R.drawable.info_background));
             toast_message.setText(message);
-            toast_icon.setBackground(context.getResources().getDrawable(R.drawable.ic_info));
+            toast_icon.setImageResource(R.drawable.ic_info);
             Toast toast = new Toast(context);
             toast.setDuration(duration);
             toast.setGravity(gravity, 0, 20);
@@ -117,6 +184,26 @@ public class DesignerToast {
         } catch (Exception e) {
             Log.e(TAG, "Info: ", e);
             Error(context, String.valueOf(e), Gravity.BOTTOM, Toast.LENGTH_SHORT);
+        }
+    }
+
+    public static void Info(Context context, String message, String description, int gravity, int duration, String type) {
+        try {
+            @SuppressLint("InflateParams") View layout = LayoutInflater.from(context).inflate(R.layout.dark_layout, null, false);
+            TextView toast_message = layout.findViewById(R.id.dark_toast_message);
+            TextView toast_description = layout.findViewById(R.id.dark_toast_description);
+            ImageView toast_icon = layout.findViewById(R.id.dark_toast_icon);
+            toast_message.setText(message);
+            toast_message.setTextColor(context.getResources().getColor(R.color.info_color));
+            toast_description.setText(description);
+            toast_icon.setImageResource(R.drawable.ic_info_2);
+            Toast toast = new Toast(context);
+            toast.setDuration(duration);
+            toast.setGravity(gravity, 0, 20);
+            toast.setView(layout);
+            toast.show();
+        } catch (Exception e) {
+            Log.e(TAG, "Info: ", e);
         }
     }
 
@@ -133,7 +220,7 @@ public class DesignerToast {
             toast_message.setTextColor(Color.parseColor(text_color));
             ImageView toast_icon = layout.findViewById(R.id.toast_icon);
             toast_message.setText(message);
-            toast_icon.setBackground(context.getResources().getDrawable(toast_image));
+            toast_icon.setImageDrawable(context.getResources().getDrawable(toast_image));
             toast_icon.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
             Toast toast = new Toast(context);
             toast.setDuration(duration);

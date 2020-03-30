@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- regular -->
+    <font
+        android:font="@font/ar"
+        android:fontStyle="normal"
+        android:fontWeight="500"
+
+        app:font="@font/ar"
+        app:fontStyle="normal"
+        app:fontWeight="300"
+        tools:targetApi="o" />
+
+</font-family>

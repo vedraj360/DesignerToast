@@ -9,6 +9,7 @@
     android:paddingEnd="24dp"
     android:paddingBottom="8dp">
 
+
     <ImageView
         android:id="@+id/toast_icon"
         android:layout_width="36dp"
@@ -22,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginStart="10dp"
+        android:fontFamily="@font/ar"
         android:text="Hey there Vedx Here"
         android:textColor="#FFFFFF" />
 
