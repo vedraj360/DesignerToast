@@ -1,8 +1,8 @@
 # DesignerToast 🤩❤️🔥 
-[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-DesignerToast-green.svg?style=flat )]( https://android-arsenal.com/details/1/8090 )
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-DesignerToast-green.svg?style=flat )](https://android-arsenal.com/details/1/8090)
 [![platform](https://img.shields.io/badge/platform-Android-green.svg)](https://www.android.com)
 [![API](https://img.shields.io/badge/API-17%2B-brightgreen.svg?style=plastic)](https://android-arsenal.com/api?level=17)
-[![](https://jitpack.io/v/vedraj360/DesignerToast.svg)](https://jitpack.io/#vedraj360/DesignerToast)
+[![0.1.3](https://jitpack.io/v/vedraj360/DesignerToast.svg)](https://jitpack.io/#vedraj360/DesignerToast)
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ Add this to your module's `build.gradle` file (make sure the version matches the
 
 ```gradle
 dependencies {
-	        implementation 'com.github.vedraj360:DesignerToast:0.1.2'
+	 implementation 'com.github.vedraj360:DesignerToast:0.1.3'
 }
 ```
 
