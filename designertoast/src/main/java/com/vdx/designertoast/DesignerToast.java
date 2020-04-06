@@ -49,7 +49,7 @@ public class DesignerToast {
             ImageView toast_icon = layout.findViewById(R.id.toast_icon);
             background.setBackground(context.getResources().getDrawable(R.drawable.success_background));
             toast_message.setText(message);
-            toast_icon.setBackground(context.getResources().getDrawable(R.drawable.ic_warning_2));
+            toast_icon.setBackground(context.getResources().getDrawable(R.drawable.ic_success));
             Toast toast = new Toast(context);
             toast.setDuration(duration);
             toast.setGravity(gravity, 0, 20);
