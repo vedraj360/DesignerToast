@@ -11,7 +11,6 @@ Add this in your root `build.gradle` file (**not** your module `build.gradle` fi
 ```gradle
 allprojects {
 	repositories {
-		...
 		maven { url "https://jitpack.io" }
 	}
 }
@@ -104,19 +103,19 @@ DesignerToast.Success("yourContext", "Success",, "Hello this is demo success!",G
 To display the error Toast:
 
 ``` java
-DesignerToast.Success("yourContext", "Error",, "Hello this is demo error!",Gravity.CENTER, Toast.LENGTH_SHORT,DesignerToast.STYLE_DARK);
+DesignerToast.Error("yourContext", "Error",, "Hello this is demo error!",Gravity.CENTER, Toast.LENGTH_SHORT,DesignerToast.STYLE_DARK);
 ```
 
 To display a warning Toast:
 
 ``` java
-DesignerToast.Success("yourContext", "Warning",, "Hello this is demo warning!",Gravity.CENTER, Toast.LENGTH_SHORT,DesignerToast.STYLE_DARK);
+DesignerToast.Warning("yourContext", "Warning",, "Hello this is demo warning!",Gravity.CENTER, Toast.LENGTH_SHORT,DesignerToast.STYLE_DARK);
 ```
 
 To display an info Toast:
 
 ``` java
-DesignerToast.Success("yourContext", "Info",, "Hello this is demo info!",Gravity.CENTER, Toast.LENGTH_SHORT,DesignerToast.STYLE_DARK);
+DesignerToast.Info("yourContext", "Info",, "Hello this is demo info!",Gravity.CENTER, Toast.LENGTH_SHORT,DesignerToast.STYLE_DARK);
 ```
 
 
