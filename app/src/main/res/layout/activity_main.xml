@@ -17,5 +17,4 @@
         android:text="Click me"
         tools:ignore="HardcodedText" />
 
-
 </LinearLayout>

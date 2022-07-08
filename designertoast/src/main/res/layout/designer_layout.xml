@@ -9,7 +9,6 @@
     android:paddingEnd="24dp"
     android:paddingBottom="8dp">
 
-
     <ImageView
         android:id="@+id/toast_icon"
         android:layout_width="36dp"
@@ -26,6 +25,5 @@
         android:fontFamily="@font/ar"
         android:text="Hey there Vedx Here"
         android:textColor="#FFFFFF" />
-
 
 </LinearLayout>
