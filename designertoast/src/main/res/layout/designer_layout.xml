@@ -25,5 +25,4 @@
         android:fontFamily="@font/ar"
         android:text="Hey there Vedx Here"
         android:textColor="#FFFFFF" />
-    
 </LinearLayout>
